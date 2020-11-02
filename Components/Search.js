@@ -1,5 +1,3 @@
-// Components/Search.js
-
 import React from 'react'
 import { StyleSheet, View, TextInput, Button, Text, FlatList, ActivityIndicator } from 'react-native'
 import FilmItem from './FilmItem'
@@ -50,7 +48,7 @@ class Search extends React.Component {
     if (this.state.isLoading) {
       return (
         <View style={styles.loading_container}>
-          <ActivityIndicator size="large" />
+          <ActivityIndicator size="large" color="#0000ff" />
         </View>
       )
     }
